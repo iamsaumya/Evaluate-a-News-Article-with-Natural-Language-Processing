@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Test</title>
+</head>
+
+<body>
+<div id="container">
+    <header>
+        <div id="heading">Evaluate News Article with Natural Language Processing</div>
+    </header>
+    <main>
+        <section>
+            <form class="" onsubmit="return Client.handleSubmit(event)">
+                <p id="validationerror" style="display: none">The URL is wrong, Please enter a correct URL</p>
+                <input id="name" type="text" name="input" value="" placeholder="https://en.wikipedia.org/wiki/Blog">
+                <input type="submit" name="" value="Process..." onclick="return Client.handleSubmit(event)"
+                       onsubmit="return Client.handleSubmit(event)">
+            </form>
+            <div class="content_block" id="polarity">
+                <h2>Text Polarity:</h2>
+                <p></p>
+            </div>
+            <div class="content_block" id="confidence">
+                <h2>Confidence:</h2>
+                <p></p>
+            </div>
+            <div class="content_block" id="text_subjectivity">
+                <h2>Text Subjectivity:</h2>
+                <p></p>
+            </div>
+            <div class="content_block" id="excerpt">
+                <h2>Text Excerpt:</h2>
+                <p></p>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <p>Made by Saumya Pandey</p>
+    </footer>
+</div>
+<script>
+    // Check that service workers are supported
+    if ('serviceWorker' in navigator) {
+        // Use the window load event to keep the page load performant
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/service-worker.js');
+        });
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+body {
+  min-height: 100%;
+  min-width: 100%;
+  background-color: blanchedalmond;
+}
+
+main{
+  min-height: 100vh;
+  margin: 5% 10%;
+}
+#container {
+  min-height: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto 1fr auto;
+}
+
+@media all and (max-width: 800px) {
+  main {
+    padding: 10% !important;
+  }
+}
+

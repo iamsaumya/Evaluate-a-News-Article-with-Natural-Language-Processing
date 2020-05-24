@@ -1,0 +1,19 @@
+header {
+  width: 100%;
+  height: auto;
+  background-color: aquamarine;
+}
+
+#heading {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  font-size: 4vw;
+  padding: 4vh 0;
+}
+
+@media all and (max-width:1200px) {
+    #heading{
+        font-size: 6vw;
+    }
+}
